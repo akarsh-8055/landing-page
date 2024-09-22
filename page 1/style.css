@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+#main{
+    height:100%;
+    width:100%;
+    display: flex;
+}
+#left{
+    position: relative;
+    width:40%;
+    height:100%;
+   
+}
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+    
+}
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+    font-size:15px;
+}
+
+#lnavr i{
+    color: royalblue;
+}
+
+#left #textcenter{
+                 position: absolute;
+                 top: 50%;
+                 left:50%;
+                 transform: translate(-50%,-50%);
+}
+
+
+#textcenter h1{
+     font-size: 90px;
+     font-weight: 900;
+}
+#textcenter p{
+    font-size: 12px;
+    opacity: .6;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 7px;
+    font-weight: 600;
+    opacity: .6;
+
+}
+#right{
+    width:60%;
+    height:100%;
+    background-color: violet;
+    /* display:flex;
+    flex-direction: column; */
+}
+
+#rtop{
+        height:50%;
+        width:100%;
+        background-color:blue;
+        display: flex;
+        /* flex-direction: row; */
+}
+
+#rbottom{
+   height:50%;
+    width:100%;
+    background-image: url(https://media.istockphoto.com/id/510285849/photo/lemon-leaves-isolated-on-a-white-background.jpg?s=2048x2048&w=is&k=20&c=uJqGs3ryq0spipDNP9lpxqGkz5mj2JQnzQEhQTcLRIA=);
+    background-size: cover;
+    background-position: center;
+}
+
+#rtopleft{
+    height:100%;
+    width:55%;
+    background-image:url(https://media.istockphoto.com/id/1088766770/photo/pattern-of-orange-mandarins-on-blue-background.jpg?s=612x612&w=0&k=20&c=a8xdstRe5f8sRn7K-3ANkYoSKCh8h42tHcW6nIcrAq0=);
+    background-size: cover;
+    background-position: center;
+
+}
+#rtopright{
+    height:100%;
+    width:45%;
+    background-image: url(https://media.istockphoto.com/id/1320915192/photo/top-view-of-harvested-fresh-ripe-round-oranges.jpg?s=2048x2048&w=is&k=20&c=_WTIShREkTz3LdA0BaIaOoVQOwRZEnze8BAOt6AAM04=);
+    background-size: cover;
+    background-position: left;
+}
+
+@media(max-width:500px)
+{
+    #main #left{
+        width:100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+}
+   
