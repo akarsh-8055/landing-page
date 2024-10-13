@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Monument';
+    src: url('path-to-font/Monument.woff2') format('woff2'),
+         url('path-to-font/Monument.woff') format('woff'),
+         url('path-to-font/Monument.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Monument', sans-serif;
+  }
+  
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%
+    
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #bea5ab;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#part1{
+height: 100%;
+width:26%;
+/* background-color: red; */
+}
+#part2{
+    height: 100%;
+    width:68%;
+    background-image: url(https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+   
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    background-color:#4a3e415c; 
+}
+#part3{
+    height: 100%;
+    width:7%;
+    /* background-color: green; */
+}
+#text-div{
+    height: 300px;
+    position: absolute;
+    width: 400px;
+    left:7%;
+    top:50%;
+    transform: translate(0,-50%);
+}
+#text-div>h1{
+    font-size: 95px;
+    font-family: 'Monument', sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 78px;
+    color: white;
+    text-transform: uppercase;
+}
+#small-img-div{
+height: 400px;
+width: 300px;
+background-image: url(https://images.unsplash.com/photo-1601412436009-d964bd02edbc?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-position: center;
+background-size: cover;
+position: absolute;
+top:50%;
+right:5%;
+transform:translate(0,-50%);
+}
+
+#vertical-text{
+    position: absolute;
+    right:-50%;
+    top:-5%;
+    transform: rotate(90deg);
+     transform-origin: 0% 0%;
+    /* width: 100%; */
+    /* background-color: red; */
+}
+#vertical-text>h1{
+    
+    font-weight: 900;
+    font-family: 'Monument', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width:2px ;
+    -webkit-text-stroke-color:#fff ;
+    letter-spacing: 2px;
+    font-size: 70px;
+    
+    
+   
+}
+
+#nav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+    left:6%;
+    top:5%;
+    
+}
+#nav>img{
+    height: 60px;
+
+}
+#nav>h5{
+    font-size:20px;
+    font-family: 'Monument', sans-serif;
+    color:#fff;
+
+}
+
