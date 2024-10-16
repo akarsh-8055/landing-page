@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#part1{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    
+}
+#part2{
+    height: 100%;
+    width: 60%;
+   
+    
+    /* justify-content: center; */
+}
+
+#part2>#top{
+    height: 50%;
+    width: 100%;
+    background-color: gainsboro;
+    display: flex;
+}
+
+#top>#left{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675667408018-3b64dbc55db1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+}
+
+#top>#right{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://media.istockphoto.com/id/1195258064/photo/top-view-of-empty-plate-on-colorful-blue-and-orange-surface.jpg?s=612x612&w=0&k=20&c=lGB8eclJ21dwkHRkRnTUAylnu7xvHrGKgNAs9Poomnw=);
+    background-position: top;
+    background-size: cover;
+}
+
+#part2>#bottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1664881659211-7f0409e01800?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: top;
+    background-size: cover;
+}
+
+#nav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lrightnav{
+    display: flex;
+    align-items: center;
+}
+
+#lrightnav a{
+    margin-right:20px ;
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+    font-size: 14px;
+}
+
+#lrightnav i{
+    color:royalblue;
+}
+
+#part1>#textcenter{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-transform: translate(-50%,-50%);
+}
+
+#textcenter>h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#textcenter>p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter>a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+
+}
+@media(max-width:500px)
+{
+  #main{
+    flex-direction: column;
+  }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+          width: 100%;
+        }
+    
+}
